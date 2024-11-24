@@ -11,6 +11,7 @@
   <subset name="Style" displayName="Style">
     <include name="dark" displayName="Dark" />
     <include name="light" displayName="Light" />
+    <include name="black" displayName="Black" />
   </subset>
 
   <subset name="Color scheme" displayName="Color scheme">
@@ -63,6 +64,7 @@
     <include name="ratio43" ifNotArch="handheld,rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" displayName="4:3" />
     <include name="ratio53" ifNotArch="handheld,rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" displayName="5:3" />
 
+    <include name="ratio11" displayName="1:1" />
     <include name="ratio32" displayName="3:2" />
     <include name="ratio43" displayName="4:3" />
     <include name="ratio53" displayName="5:3" />

@@ -7,8 +7,9 @@
   <formatVersion>7</formatVersion>
 
   <variables>
-    <fgColor ifSubset="Style:dark">FFFFFF</fgColor>
+    <fgColor ifSubset="Style:dark|black">FAFAFA</fgColor>
     <fgColor ifSubset="Style:light">000000</fgColor>
+    <bgColor ifSubset="Style:black">000000</bgColor>
   </variables>
 
   <!--Configurações de ajuda-->

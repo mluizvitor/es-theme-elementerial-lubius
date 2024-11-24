@@ -7,16 +7,16 @@
   <formatVersion>7</formatVersion>
 
   <variables>
-    <mainColor ifSubset="Style:dark">E06C7A</mainColor>
+    <mainColor ifSubset="Style:dark|black">E06C7A</mainColor>
     <mainColor ifSubset="Style:light">BD283A</mainColor>
 
-    <onMainColor ifSubset="Style:dark">000000</onMainColor>
+    <onMainColor ifSubset="Style:dark|black">000000</onMainColor>
     <onMainColor ifSubset="Style:light">FFFFFF</onMainColor>
 
     <bgColor ifSubset="Style:dark">242628</bgColor>
     <bgColor ifSubset="Style:light">C8CCD0</bgColor>
 
-    <sectColor ifSubset="Style:dark">52BF40</sectColor>
+    <sectColor ifSubset="Style:dark|black">52BF40</sectColor>
     <sectColor ifSubset="Style:light">1B5412</sectColor>
   </variables>
 

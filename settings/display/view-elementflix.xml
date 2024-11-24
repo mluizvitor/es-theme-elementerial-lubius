@@ -119,6 +119,7 @@
       <path>./assets/ratio32/gamelist-video.png</path>
       <path ifSubset="Ratio:ratio43">./assets/ratio43/gamelist-video.png</path>
       <path ifSubset="Ratio:ratio53">./assets/ratio53/gamelist-video.png</path>
+      <path ifSubset="Ratio:ratio11">./assets/ratio11/gamelist-video.png</path>
       <size>1 1</size>
       <origin>0 0</origin>
       <pos>0 0</pos>

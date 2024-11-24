@@ -18,6 +18,7 @@
     </helpsystem>
 
     <image name="borderOverlay" extra="true">
+      <path ifSubset="Ratio:ratio11">./assets/ratio11/borders.png</path>
       <path ifSubset="Ratio:ratio32">./assets/ratio32/borders.png</path>
       <path ifSubset="Ratio:ratio43">./assets/ratio43/borders.png</path>
       <path ifSubset="Ratio:ratio53">./assets/ratio53/borders.png</path>
@@ -65,6 +66,10 @@
       <size>1 0</size>
       <origin>0 0.5</origin>
       <pos>0 0.125</pos>
+
+      <origin ifSubset="Ratio:ratio11">0 0</origin>
+      <pos ifSubset="Ratio:ratio11">0 0</pos>
+      <size ifSubset="Ratio:ratio11">0 0.6</size>
       <zIndex>-5</zIndex>
     </image>
 
@@ -84,6 +89,7 @@
       <path>./assets/ratio32/gamelist-basic.png</path>
       <path ifSubset="Ratio:ratio43">./assets/ratio43/gamelist-basic.png</path>
       <path ifSubset="Ratio:ratio53">./assets/ratio53/gamelist-basic.png</path>
+      <path ifSubset="Ratio:ratio11">./assets/ratio11/gamelist-basic.png</path>
       <size>1 1</size>
       <origin>0 0</origin>
       <pos>0 0</pos>
@@ -111,6 +117,9 @@
 
       <lineSpacing ifSubset="Ratio:ratio53">1.6</lineSpacing>
       <lineSpacing ifSubset="Ratio:ratio53" ifHelpPrompts="true">1.575</lineSpacing>
+
+      <lineSpacing ifSubset="Ratio:ratio11">1.7</lineSpacing>
+      <lineSpacing ifSubset="Ratio:ratio11" ifHelpPrompts="true">1.575</lineSpacing>
     </textlist>
   </view>
 
@@ -137,12 +146,16 @@
       <pos>0.733333 0.525</pos>      <!-- 480x320 / (240 + maxWidth / 2 = 352)x (80 + maxHeight / 2 = 168)y -->
       <origin>0.5 0.5</origin>
       <maxSize>0.466667 0.55</maxSize>      <!-- 480x320 / 224x 176y -->
+      
+      <pos ifSubset="Ratio:ratio11">0.733333 0.4</pos>
+      <maxSize ifSubset="Ratio:ratio11">0.466667 0.45</maxSize>      <!-- 480x320 / 224x 176y -->
       <zIndex>5</zIndex>
       <roundCorners>0.02</roundCorners>
     </image>
 
     <image name="md_marquee">
       <pos>0.733333 0.25</pos>      <!-- 480x320 / 352x 80y -->
+      <pos ifSubset="Ratio:ratio11">0.733333 0.2</pos>      <!-- 480x320 / 352x 80y -->
       <origin>0.5 0.5</origin>
       <maxSize>0.4 0.175</maxSize>      <!-- 480x320 / 192x 56y -->
       <zIndex>6</zIndex>
@@ -154,9 +167,11 @@
       <pos>0.61 0.83125</pos>      <!-- 480x320 / 304x 272y-->
       <pos ifSubset="Ratio:ratio43">0.6075 0.83125</pos>
       <pos ifSubset="Ratio:ratio53">0.62 0.83125</pos>
+      <pos ifSubset="Ratio:ratio11">0.61 0.63</pos>
 
       <size>0.075</size>
       <size ifSubset="Ratio:ratio43">0.066667</size>
+      <size ifSubset="Ratio:ratio11">0.05</size>
 
       <filledPath>./assets/icons/star.svg</filledPath>
       <unfilledPath>./assets/icons/star_border.svg</unfilledPath>
@@ -164,8 +179,21 @@
       <zIndex>5</zIndex>
     </rating>
 
-    <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_releasedate, md_developer, md_publisher, md_genre, md_players, md_lastplayed, md_playcount, md_description, md_name">
+    <text name="md_lbl_rating, md_description, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_releasedate, md_developer, md_publisher, md_genre, md_players, md_lastplayed, md_playcount, md_name">
       <visible>false</visible>
+    </text>
+
+    <text name="md_description" ifSubset="Ratio:ratio11">
+      <fontPath>${fontRegular}</fontPath>
+      <fontSize>${fontSizeBody-small}</fontSize>
+      <fontSize ifSubset="FontSize:large">${fontSizeBody-medium}</fontSize>
+      <fontSize ifSubset="FontSize:small">${fontSizeBody-small}</fontSize>
+      <color>${fgColor}</color>
+
+      <size>0.466667 0.188889</size>
+      <pos>0.5 0.702778</pos>
+      <lineSpacing>1</lineSpacing>
+      <visible>true</visible>
     </text>
 
     <datetime name="md_releasedate, md_lastplayed">
@@ -183,9 +211,10 @@
 
     <video name="md_video">
       <origin>0 0.5</origin>
-      <pos>0.4 0.2875</pos> <!-- 192x 92y -->
-      <minSize>0.6 0.575</minSize> <!-- 288x 184y -->
+      <pos>0.4 0.3</pos> <!-- 192x 92y -->
+      <minSize>0.6 0.6</minSize> <!-- 288x 184y -->
       <delay>1</delay>
+
       <showSnapshotNoVideo>true</showSnapshotNoVideo>
       <showSnapshotDelay>true</showSnapshotDelay>
       <effect>none</effect>
@@ -212,6 +241,7 @@
       <path>./assets/ratio32/gamelist-video.png</path>
       <path ifSubset="Ratio:ratio43">./assets/ratio43/gamelist-video.png</path>
       <path ifSubset="Ratio:ratio53">./assets/ratio53/gamelist-video.png</path>
+      <path ifSubset="Ratio:ratio11">./assets/ratio11/gamelist-video.png</path>
       <size>1 1</size>
       <origin>0 0</origin>
       <pos>0 0</pos>

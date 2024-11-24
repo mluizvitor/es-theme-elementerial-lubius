@@ -13,7 +13,7 @@
     <bgColor ifSubset="Style:dark">1D1B16</bgColor>
     <bgColor ifSubset="Style:light">FFFDEB</bgColor>
 
-    <sectColor ifSubset="Style:dark">fff394</sectColor>
+    <sectColor ifSubset="Style:dark|black">fff394</sectColor>
     <sectColor ifSubset="Style:light">d48e15</sectColor>
   </variables>
 
